@@ -1,0 +1,81 @@
+body {
+  background-color: #fffffe;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header, .footer {
+  background-color: #eff0f3;
+  color: #0d0d0d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  height: 15vh;
+  font-size: 3rem;
+}
+
+.footer {
+  height: 5vh;
+  font-size: 1rem;
+}
+
+.add-ingredient-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.add-ingredient-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 50vh;
+  gap: 0.25rem;
+}
+
+.add-ingredient-label,
+.list-headline {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #0d0d0d;
+}
+
+.add-ingredient-input {
+  margin: 0.25rem 0;
+}
+
+.add-ingredient-input, 
+.btn-primary {
+  border-radius: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  color: #2a2a2a;
+}
+
+.btn-primary {
+  background-color: #ff8e3c;
+  color: #0d0d0d;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.063rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  box-shadow: rgba(217, 55, 110, 0.35) 0px -50px 36px -28px inset;
+}
+
+.ingredients-list {
+  text-align: center;
+  margin: 0.50rem 0;
+  padding: 1rem;
+}
+
+.ingredients-ul {
+  padding: 0.5rem;
+}
