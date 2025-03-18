@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react';
+import GenerateRecipe from './GenerateRecipe';
 
 export default function AddIngredient() {
 
@@ -15,8 +16,10 @@ export default function AddIngredient() {
         inputRef.current.value = "";
     }
 
-    function handleRecipe() {
-        console.log("Clicked!")
+    function clearIngredients() {
+        setTimeout(() => {
+            setIngredients([])
+        }, 300)
     }
 
     return (
@@ -38,7 +41,10 @@ export default function AddIngredient() {
                         ))}
                     </ul>
 
-                    <button type="button" className="btn-primary" onClick={handleRecipe}>Generate Recipe</button>
+                    <div className="btn-container">
+                        <GenerateRecipe ingredients={ingredients} />
+                        <button type="button" className="btn-secondary" onClick={clearIngredients}>Clear List</button>
+                    </div>
                 </section>
             )}
         </>

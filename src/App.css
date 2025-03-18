@@ -1,11 +1,13 @@
 body {
-  background-color: #fffffe;
+  background-color: #F7F3E9;
+  color: #2C3E50;
   font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
 }
 
 .header, .footer {
-  background-color: #eff0f3;
-  color: #0d0d0d;
+  background-color: #2C3E50;
+  color: #F8F9FA;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,23 +42,30 @@ body {
 .list-headline {
   font-size: 1.5rem;
   font-weight: 500;
-  color: #0d0d0d;
 }
 
 .add-ingredient-input {
+  border: #BDC3C7;
   margin: 0.25rem 0;
 }
 
 .add-ingredient-input, 
-.btn-primary {
+.btn-primary,
+.btn-secondary {
   border-radius: 0.5rem;
   padding: 0.625rem 1.25rem;
-  color: #2a2a2a;
 }
 
-.btn-primary {
-  background-color: #ff8e3c;
-  color: #0d0d0d;
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  width: 50vh;
+  margin: 0 auto;
+  gap: 0.25rem;
+}
+
+.btn-primary,
+.btn-secondary {
   border: none;
   cursor: pointer;
   letter-spacing: 0.063rem;
@@ -64,16 +73,29 @@ body {
   text-transform: uppercase;
 }
 
+.btn-primary {
+  background-color: #E67E22;
+}
+
+.btn-secondary {
+  background-color: #C0392B;
+}
+
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  box-shadow: rgba(217, 55, 110, 0.35) 0px -50px 36px -28px inset;
+  background-color: #D35400;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+  background-color: #A93226;
 }
 
 .ingredients-list {
   text-align: center;
   margin: 0.50rem 0;
-  padding: 1rem;
 }
 
 .ingredients-ul {
