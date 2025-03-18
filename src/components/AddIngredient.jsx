@@ -4,6 +4,8 @@ import GenerateRecipe from './GenerateRecipe';
 export default function AddIngredient() {
 
     const [ ingredients , setIngredients ] = useState([]);
+    const [recipeGenerated, setRecipeGenerated] = useState(false);
+
     const inputRef = useRef();
 
     function handleIngredient(e) {
@@ -42,8 +44,10 @@ export default function AddIngredient() {
                     </ul>
 
                     <div className="btn-container">
-                        <GenerateRecipe ingredients={ingredients} />
-                        <button type="button" className="btn-secondary" onClick={clearIngredients}>Clear List</button>
+                        <GenerateRecipe ingredients={ingredients} setRecipeGenerated={setRecipeGenerated} />
+                        <button type="button" className="btn-secondary" onClick={clearIngredients}>
+                            {recipeGenerated ? "Start Again" : "Clear List"}
+                        </button>
                     </div>
                 </section>
             )}

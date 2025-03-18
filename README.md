@@ -1,12 +1,48 @@
-# React + Vite
+# Chef Bot
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Chef Bot** is a recipe generator that helps you create meals using the ingredients you have at home. Simply enter a few ingredients, and the bot will suggest creative recipes for you!
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Input at least 4 ingredients, and Chef Bot will generate recipe ideas.
+- Uses AI-powered suggestions to recommend meals.
+- API key securely handled with environment variables.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React
+- **API:** Spoonacular API
+
+## Installation & Setup
+
+1.  **Clone the repository:**
+    git clone https://github.com/luisfcalmeida/chef-bot.git
+    cd chef-bot
+
+2.  **Install dependencies:**
+    npm install
+
+3.  **Set up environment variables:**
+    Create a .env.local file in the root directory.
+    Add your API credentials:
+
+        VITE_APP_ID=your_app_id
+        VITE_API_KEY=your_api_key
+        VITE_USER_ID=your_user_id
+
+4.  **Run the development server:**
+    npm run dev
+
+5.  **Open in browser:**
+    http://localhost:5173
+
+## Contributing
+
+Contributions are welcome! If you find a bug or have a suggestion:
+Fork the repo
+Create a new branch (feature/new-feature)
+Submit a pull request
+
+## 📜 License
+
+This project is licensed under the MIT License.

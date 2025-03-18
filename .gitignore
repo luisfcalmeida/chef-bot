@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 # Tokens
-.env
+.env.local
