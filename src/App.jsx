@@ -8,11 +8,17 @@ import './App.css'
 function App() {
   return (
     <Router>
+      <div className="page-container">
         <Header />
-        <Routes>
-          <Route path="/" element={<AddIngredient />} />
-        </Routes>
+
+        <div className="content-wrap">
+          <Routes>
+            <Route path="/" element={<AddIngredient />} />
+          </Routes>
+        </div>
+
         <Footer />
+      </div>
     </Router>
   )
 }
